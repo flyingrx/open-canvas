@@ -31,7 +31,7 @@ jobs:
 
       # Build the image using langgraph
       - name: Build image with langgraph
-        run: langgraph build -t langgraph-server
+        run: langgraph build -t ghcr.io/${{ github.repository_owner }}/langgraph-server:latest
         
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
